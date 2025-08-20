@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>סימולטור עבודה מהבית</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>סימולטור עבודה מהבית</h1>
+    </header>
+
+    <section class="hud">
+      <div class="hud-item">
+        <span class="label">יום:</span>
+        <span id="day-number">1</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">שעה:</span>
+        <span id="clock">07:00</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">כסף:</span>
+        <span id="money">₪0</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">מצב:</span>
+        <span id="status">בבית</span>
+      </div>
+    </section>
+
+    <main class="layout">
+      <section class="panel actions">
+        <h2>פעולות</h2>
+        <button id="work-toggle" class="primary">התחל לעבוד</button>
+        <button id="drop-kids">קח ילדים לגן</button>
+        <button id="pickup-kids">איסוף ילדים מהגן</button>
+      </section>
+
+      <section class="panel shop">
+        <h2>חנות</h2>
+        <div id="shop-items" class="shop-items"></div>
+      </section>
+
+      <section class="panel tasks">
+        <h2>משימות היום</h2>
+        <ul id="tasks-list" class="tasks-list"></ul>
+        <h3>מלאי</h3>
+        <ul id="inventory-list" class="inventory-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>קצב זמן: כל 2 שניות = דקת משחק. יום/לילה אוטומטי לפי שעה.</span>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+  </html>
+
+
